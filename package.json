@@ -1,0 +1,33 @@
+{
+  "name": "miniapp-init",
+  "version": "1.0.0",
+  "description": "miniapp-init",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuayu/miniapp-init.git"
+  },
+  "keywords": [
+    "wechat",
+    "miniapp",
+    "init"
+  ],
+  "author": "Jax",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuayu/miniapp-init/issues"
+  },
+  "homepage": "https://github.com/zhuayu/miniapp-init#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.6.5",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-header": "^2.0.5",
+    "gulp-less": "^3.5.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.3.0"
+  }
+}

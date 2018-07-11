@@ -1,0 +1,11 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarTitleText": "人才码头",
+    "navigationBarBackgroundColor":"#295fcc",
+    "navigationBarTextStyle":"white"
+  }
+}
