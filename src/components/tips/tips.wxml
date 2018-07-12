@@ -1,0 +1,5 @@
+<view class="custom-tips {{title ? 'active' : ''}}" style="background-color:{{color}};">
+    <view class="tips-content">
+        <text class="tips-text">{{title}}</text>
+    </view>
+</view>

@@ -1,0 +1,43 @@
+.custom-mask{
+    overflow: hidden;
+}
+.custom-mask-mask{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.custom-mask-content-bottom{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 5000;
+    width: 100%;
+    transform: translate(0, 100%);
+    backface-visibility: hidden;
+    background: #fff;
+    transition: transform .3s;
+}
+.custom-mask-content-bottom.active{
+    transform: translate(0, 0);
+}
+
+.custom-mask-content-center{
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    z-index: 5000;
+    transform: translate(-50%, 100%);
+    backface-visibility: hidden;
+    background: #fff;
+    transition: all .3s;
+}
+.custom-mask-content-center.active{
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+

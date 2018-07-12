@@ -1,0 +1,6 @@
+<view class="custom-mask">
+    <view class="custom-mask-mask" wx:if="{{active}}" bindtap="toggleMask"></view>
+    <view class="custom-mask-content-{{align}} {{active ? 'active' : ''}}">
+        <slot></slot>
+    </view>
+</view>
