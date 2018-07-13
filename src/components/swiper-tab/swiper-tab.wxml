@@ -1,0 +1,14 @@
+<scroll-view scroll-x scroll-with-animation 
+  class="swiper-tab-list" 
+  scroll-into-view="swiper-tab_{{activeIndex}}" 
+  scroll-left="{{scrollLeft}}" >
+    <block wx:for="{{datas}}" wx:key="{{index}}">
+        <view id="swiper-tab_{{index}}" 
+          class="swiper-tab-item {{ index == activeIndex ? 'active' : '' }}" 
+          style="width:{{tabWidth}}px;" 
+          bindtap="checkoutTab" 
+          data-index="{{index}}"
+        >{{item.name}}</view>
+    </block>
+    <view style="transform: translateX({{sliderOffset}}px);width:{{tabWidth}}px;background-color:{{sliderColor}}" class="swiper-tab-slider"></view>
+</scroll-view>
