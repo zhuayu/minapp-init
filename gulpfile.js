@@ -47,7 +47,9 @@ gulp.task('pages', function() {
         .src(
             [
                 'src/**/*',
-                '!src/**/*.less'
+                '!src/**/*.less',
+                '!src/style',
+                '!src/style/**/*',
             ],
             { base: 'src' }
         )
