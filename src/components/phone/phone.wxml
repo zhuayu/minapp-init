@@ -1,0 +1,27 @@
+<view class="custom-bindphone">
+    <view class="custom-bindphone-section">
+        <view class="bindphone-cell">
+            <view class="bindphone-cell__hd">
+                <view class="bindphone-label">手机号</view>
+            </view>
+            <view class="bindphone-cell__bd">
+                <input type="number" class="bindphone-input" placeholder="请输入您的手机号" value="{{mobile}}" bindinput="phoneInputEvent"/>
+            </view>
+        </view>
+        <view class="bindphone-cell">
+            <view class="bindphone-cell__hd">
+                <view class="bindphone-label">验证码</view>
+            </view>
+            <view class="bindphone-cell__bd">
+                <input class="bindphone-input" type="number" placeholder="请输入验证码" value="{{vcode}}" bindinput="vcodeInputEvent"/>
+            </view>
+            <view class="bindphone-cell__ft">
+                <view class="bindphone-vcode-btn {{vcodeLock ? '' : 'active'}}" bindtap="getVcodeEvent">{{vcodeTips}}</view>
+            </view>
+        </view>
+    </view>
+    
+    <view class="custom-btn-section" style="width:{{btnWidth}}">
+        <button class="pd-btn" type="blue" bindtap="submitMobile" style="background-color:{{btnColor}}">{{btnText}}</button>
+    </view>
+</view>
