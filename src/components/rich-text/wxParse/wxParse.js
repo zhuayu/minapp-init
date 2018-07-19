@@ -146,14 +146,14 @@ function wxParseTemArray(temArrayName,bindNameReg,total,that){
  * 
  */
 
-function emojisInit(reg='',baseSrc="/wxParse/emojis/",emojis){
-   HtmlToJson.emojisInit(reg,baseSrc,emojis);
-}
+// function emojisInit(reg='',baseSrc="/wxParse/emojis/",emojis){
+//    HtmlToJson.emojisInit(reg,baseSrc,emojis);
+// }
 
 module.exports = {
   wxParse: wxParse,
   wxParseTemArray:wxParseTemArray,
-  emojisInit:emojisInit
+  // emojisInit:emojisInit
 }
 
 

@@ -290,14 +290,14 @@ function transEmojiStr(str){
   return emojiObjs;
 }
 
-function emojisInit(reg='',baseSrc="/wxParse/emojis/",emojis){
-    __emojisReg = reg;
-    __emojisBaseSrc=baseSrc;
-    __emojis=emojis;
-}
+// function emojisInit(reg='',baseSrc="/wxParse/emojis/",emojis){
+//     __emojisReg = reg;
+//     __emojisBaseSrc=baseSrc;
+//     __emojis=emojis;
+// }
 
 module.exports = {
     html2json: html2json,
-    emojisInit:emojisInit
+    // emojisInit:emojisInit
 };
 
