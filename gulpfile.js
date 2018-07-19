@@ -48,6 +48,7 @@ gulp.task('pages', function() {
             [
                 'src/**/*',
                 '!src/**/*.less',
+                '!src/**/*.md',
                 '!src/style',
                 '!src/style/**/*',
             ],
